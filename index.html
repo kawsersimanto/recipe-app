@@ -1,27 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- for SEO  -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
 
     <!-- CSS links -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <title>Template</title>
-
+    <title>Recipe App</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    
+    <section class="mobile-container shadow text-center mt-5">
+      <form class="search-form py-4">
+        <input type="text" class="p-1" placeholder="Search" />
+        <button type="submit" class="border-0 bg-white">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <div class="fav-container py-2">
+        <h3 class="mb-3">Favorite Meals</h3>
+        <ul
+          class="list-unstyled d-flex align-items-center justify-content-center flex-wrap"
+        >
+          <li class="d-flex flex-column mx-1">
+            <img
+              src="https://www.themealdb.com/images/ingredients/Lime.png"
+              alt=""
+              class="img-fluid shadow"
+            /><span>Lime</span>
+          </li>
+          <li class="d-flex flex-column mx-1">
+            <img
+              src="https://www.themealdb.com/images/ingredients/Lime.png"
+              alt=""
+              class="img-fluid shadow"
+            /><span>Lime</span>
+          </li>
+          <li class="d-flex flex-column mx-1">
+            <img
+              src="https://www.themealdb.com/images/ingredients/Lime.png"
+              alt=""
+              class="img-fluid shadow"
+            /><span>Lime</span>
+          </li>
+
+          <li class="d-flex flex-column mx-1">
+            <img
+              src="https://www.themealdb.com/images/ingredients/Lime.png"
+              alt=""
+              class="img-fluid shadow"
+            /><span>Lime</span>
+          </li>
+
+          <li class="d-flex flex-column mx-1">
+            <img
+              src="https://www.themealdb.com/images/ingredients/Lime.png"
+              alt=""
+              class="img-fluid shadow"
+            /><span>Lime</span>
+          </li>
+        </ul>
+      </div>
+      <div class="meals p-2">
+        <div class="meal border">
+          <div class="meal-header p-2">
+            <img
+              class="img-fluid"
+              src="https://www.themealdb.com/images/ingredients/lamb.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="meal-body d-flex align-items-center justify-content-between bg-white py-2 px-2"
+          >
+            <h5>Veggie</h5>
+            <button class="bg-white border-0">
+              <i class="far fa-heart love-btn"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- js links  -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-   
   </body>
 </html>
